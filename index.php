@@ -1,10 +1,21 @@
+<?php
+
+if(isset($_POST["enviar"]) {
+$valor1 = $_POST['inputValor1'];
+$valor2 = $_POST['inputValor2'];
+$resultado = $valor1+$valor2;
+echo "A soma é: $resultado";
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="/bootstrap.min.css" rel="stylesheet">
+        <link href="bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
      <div class="row">
@@ -12,7 +23,7 @@
             <div class="well bs-component">
               <form class="form-horizontal">
                 <fieldset>
-                  <legend>Legend</legend>
+                  <legend>Adição de dois números</legend>
                   <div class="form-group">
                     <label for="inputValor1" class="col-lg-2 control-label">Valor 1</label>
                     <div class="col-lg-10">
@@ -35,5 +46,6 @@
               </form>
             </div>
           </div>
+            </div>
     </body>
 </html>
